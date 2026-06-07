@@ -6,8 +6,10 @@ import { ThemeProvider } from './context/ThemeContext'
 export default function App() {
   const apiBaseUrl = useMemo(() => {
     // Vite env var: VITE_API_BASE_URL
-    return import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+    // Render backend base URL, e.g. https://myportfolio-api.onrender.com
+    return import.meta.env.VITE_API_BASE_URL || 'https://myportfolio-api.onrender.com'
   }, [])
+
 
   return (
     <ThemeProvider apiBaseUrl={apiBaseUrl}>
