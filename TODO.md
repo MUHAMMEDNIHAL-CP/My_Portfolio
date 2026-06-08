@@ -1,7 +1,7 @@
-# TODO
-
-- [x] Fix frontend contact submit implementation (route target is /api/contact/).
-- [ ] Fix backend admin URL returning 404 on Render (likely wrong Render start command or wrong URLConf being served).
-- [ ] Add/adjust Vercel API baseURL handling so contact calls always hit the correct backend.
-- [ ] Validate by local `python manage.py runserver` and by checking Render `/admin/` and `/api/contact/`.
+- [ ] Fix resume download link so it works on deployed frontend (Vite public/asset path)
+- [ ] Rebuild frontend
+- [ ] Ensure any deploy config (Vercel) serves the resume file correctly
+- [ ] Verify any GitHub buttons that come from backend `github_url` are present/valid
+- [ ] (If needed) Fix backend CORS/baseURL issues for deployed frontend API calls
+- [ ] Smoke test: resume button, project github buttons, contact submission
 
