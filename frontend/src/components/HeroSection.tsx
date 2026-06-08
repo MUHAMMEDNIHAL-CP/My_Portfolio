@@ -35,12 +35,13 @@ export default function HeroSection() {
               <Button
                 variant="secondary"
                 as="a"
-                href="/dist/assets/Nihal%20Resume.pdf"
+                href="/Nihal%20Resume.pdf"
                 className="ring-1 ring-indigo-400/20"
               >
                 <FiDownload className="mr-2" />
                 Download Resume
               </Button>
+
               <Button variant="secondary" as="a" href="#contact">
                 <FiMail className="mr-2" />
                 Contact Me

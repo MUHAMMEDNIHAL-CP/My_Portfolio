@@ -79,6 +79,7 @@ export default function ContactSection() {
               <div className="text-xs text-neutral-400">
                 Twitter/X: <a className="underline" href="https://x.com/muhdnihhal" target="_blank" rel="noreferrer">@muhdnihhal</a>
               </div>
+
             </div>
           </div>
 
