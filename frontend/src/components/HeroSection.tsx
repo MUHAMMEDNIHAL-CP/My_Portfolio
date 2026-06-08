@@ -35,7 +35,7 @@ export default function HeroSection() {
               <Button
                 variant="secondary"
                 as="a"
-href="/dist/assets/Nihal Resume.pdf"
+href="/Nihal%20Resume.pdf"
                 className="ring-1 ring-indigo-400/20"
               >
                 <FiDownload className="mr-2" />
