@@ -19,22 +19,22 @@ const fallbackProjects: ProjectCardData[] = [
     title: 'Employee Management System',
     description: 'CRUD for employees with filtering, sorting and admin management.',
     technologies: ['React', 'Django', 'SQLite/PG'],
-    github_url: '#',
-    live_url: '#'
+    github_url: 'https://github.com/MUHAMMEDNIHAL-CP/E-CART',
+    live_url: 'https://github.com/MUHAMMEDNIHAL-CP/E-CART'
   },
   {
     title: 'Dashboard App',
     description: 'Modern dashboard with charts-ready architecture and premium cards.',
     technologies: ['React', 'Axios', 'UI/UX'],
-    github_url: '#',
-    live_url: '#'
+    github_url: 'https://github.com/MUHAMMEDNIHAL-CP/sales-dashboard',
+    live_url: 'https://github.com/MUHAMMEDNIHAL-CP/sales-dashboard'
   },
   {
     title: 'Portfolio Website',
     description: 'This portfolio—premium glassmorphism design with smooth animations.',
     technologies: ['React', 'Django', 'Tailwind', 'Framer Motion'],
-    github_url: '#',
-    live_url: '#'
+    github_url: 'https://github.com/MUHAMMEDNIHAL-CP/My_Portfo',
+    live_url: 'https://github.com/MUHAMMEDNIHAL-CP/My_Portfo'
   }
 ]
 
