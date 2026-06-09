@@ -13,7 +13,7 @@ urlpatterns = [
 
     # Serve the React SPA shell so the homepage ("/") doesn't 404.
     path('', lambda request: serve(request, 'index.html', document_root=str(FRONTEND_DIST_DIR)), name='home'),
-    path('<path:any>', lambda request, path: serve(request, 'index.html', document_root=str(FRONTEND_DIST_DIR))),
+    path('<path:subpath>', lambda request, subpath: serve(request, 'index.html', document_root=str(FRONTEND_DIST_DIR))),
 ]
 
 

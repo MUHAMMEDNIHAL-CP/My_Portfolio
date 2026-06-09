@@ -27,7 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "my-portfolio-1-3tbr.onrender.com",
+    "127.0.0.1",
+    "localhost",
 ]
+
 
 
 # Application definition
