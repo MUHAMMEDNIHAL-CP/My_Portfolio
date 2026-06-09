@@ -49,15 +49,17 @@ export default function ProjectsSection() {
       setLoading(true)
       try {
         const client = createHttpClient(apiBaseUrl)
-        const data = await fetchProjects(client)
+        const data = await fetchProjects(client, { apiBaseUrl })
         if (Array.isArray(data) && data.length) {
           setProjects(data as ProjectCardData[])
         }
-      } catch {
-        // keep fallback
+      } catch (err) {
+        // keep fallback, but expose the real error for debugging
+        console.error('Failed to fetch projects:', err)
       } finally {
         setLoading(false)
       }
+
     }
     load()
   }, [apiBaseUrl])

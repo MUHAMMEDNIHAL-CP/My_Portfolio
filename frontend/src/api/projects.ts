@@ -10,8 +10,14 @@ export type Project = {
   image_url?: string
 }
 
-export async function fetchProjects(client: AxiosInstance): Promise<Project[]> {
-  const res = await client.get('/api/projects/')
+export async function fetchProjects(client: AxiosInstance, opts?: { apiBaseUrl?: string }): Promise<Project[]> {
+  // Axios baseURL is typically `${backendHost}` (no /api). In some setups it may already include /api.
+  // Using the explicit path keeps behavior correct across environments.
+  const apiBaseUrl = opts?.apiBaseUrl ?? ''
+  const path = apiBaseUrl.includes('/api') ? '/projects/' : '/api/projects/'
+  const res = await client.get(path)
   return res.data
 }
+
+
 
