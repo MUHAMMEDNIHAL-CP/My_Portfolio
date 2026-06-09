@@ -6,13 +6,15 @@ from rest_framework.views import APIView
 from .serializers import ContactMessageCreateSerializer
 
 
-@csrf_exempt
 class ContactCreateView(APIView):
-    def post(self, request):
+    @csrf_exempt
+    def post(self, request, *args, **kwargs):
         serializer = ContactMessageCreateSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response({'success': True}, status=status.HTTP_201_CREATED)
+
+
 
 
 
