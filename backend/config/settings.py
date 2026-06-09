@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-i$e2#-^qq344mhk#5km)r!bxnz*y8_v*hbea286l_y%$nr&l4p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = [
+    "my-portfolio-1-3tbr.onrender.com",
+]
 
 
 # Application definition
@@ -141,3 +142,12 @@ REST_FRAMEWORK = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://my-portfolio-c7qfno4h2-muhammednihal-cps-projects.vercel.app",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://my-portfolio-c7qfno4h2-muhammednihal-cps-projects.vercel.app",
+]
+
+CORS_ALLOW_CREDENTIALS = True
