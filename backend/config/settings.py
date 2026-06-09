@@ -143,6 +143,7 @@ REST_FRAMEWORK = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://my-portfolio-1-3tbr.onrender.com",
     "https://my-portfolio-c7qfno4h2-muhammednihal-cps-projects.vercel.app",
 ]
 
